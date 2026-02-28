@@ -1,0 +1,12 @@
+/* Reset browser defaults that conflict with our design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
