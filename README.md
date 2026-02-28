@@ -1,87 +1,136 @@
-# 🌌 Mind Magic: Your Celestial AI Companion
+# 🌌 Mind Magic: Your Celestial AI Companion  
 
-Mind Magic is a premium, AI-powered emotional and lifestyle guidance platform. It provides personalized, multi-persona support ranging from therapeutic medical advice to cosmic astrological readings, all wrapped in a stunning, interactive glassmorphic interface.
+Mind Magic is a premium, AI-powered emotional and lifestyle guidance platform.  
+It delivers personalized, multi-persona support ranging from therapeutic medical-style guidance to cosmic astrological readings — all wrapped inside a stunning, interactive glassmorphic interface.
 
-## 👥 Team Members
-* [Your Name/Team Name Here]
+---
 
-## 🧠 Problem Statement
-Modern digital communication often lacks emotional depth and personalized context. Traditional chatbots are often rigid, impersonal, and unable to understand visual cues or specific personal backgrounds (like astrological signs or emotional states). This makes digital mental wellness and personal guidance feel "robotic" rather than supportive.
+## 👥 Team Members  
 
-## 💡 Solution Approach
-Mind Magic solves this by creating a **Multi-layered Persona System**:
-1.  **Contextual Awareness**: The AI understands your current "vibe" and mood, adapting its language and the UI's color palette.
-2.  **Multimodal Intelligence**: Equipped with "Soul Lens" (Vision AI), it doesn't just read text—it understands images you share, whether it's a fox in the wild or a photo of your dinner.
-3.  **Specialized Guidance**: 5 distinct personas (Doctor, Mentor, Counsellor, Friend, Astrologer) each with specialized knowledge and tone.
-4.  **Celestial Personalization**: A dedicated Astrology engine that gathers your Sun, Moon, and Rising signs through a visual picker to give authentic, persona-driven readings.
+**Team Name:** Tech Magic  
 
-## 🛠️ Tech Stack
-*   **Frontend**: React.js, Vite, Framer Motion (Animations), Lucide React (Icons).
-*   **Styling**: Vanilla CSS with a custom Glassmorphic Design System.
-*   **Backend**: Node.js, Express.js.
-*   **Database**: MongoDB (Atlas).
-*   **AI Engine**: Google Gemini API (Pro & Vision models).
-*   **Authentication**: JWT-based secure sessions.
+- Yadneshwar Thorat  
+- Shaunak Mulay  
+- Anant Sali  
+- Om Raundal  
 
-## ⚙️ Installation Steps
+---
 
-### 1. Clone the repository
+## 🧠 Problem Statement  
+
+Modern digital communication often lacks emotional depth and personalized context.  
+
+Traditional chatbots are:
+- Rigid  
+- Impersonal  
+- Context-unaware  
+- Unable to interpret visual cues  
+- Incapable of adapting to personal backgrounds (e.g., mood states, astrology profiles)  
+
+This makes digital mental wellness and lifestyle guidance feel robotic instead of supportive.
+
+There is a need for an emotionally intelligent, context-aware, and visually adaptive AI companion.
+
+---
+
+## 💡 Solution Approach  
+
+Mind Magic introduces a **Multi-layered Persona System** that blends emotional intelligence, visual understanding, and celestial personalization.
+
+### 🌈 1. Contextual Awareness
+- AI understands user mood & emotional vibe  
+- Adapts tone dynamically  
+- UI color palette shifts based on persona & emotional state  
+
+### 🖼️ 2. Multimodal Intelligence – *Soul Lens*
+- Powered by Vision AI  
+- Understands images shared by users  
+- Interprets objects, environments, and visual context  
+- Responds intelligently to visual inputs  
+
+### 🎭 3. Specialized Persona System
+Five distinct personas with unique tone and expertise:
+
+- 👨‍⚕️ **Doctor** – Structured, practical guidance  
+- 🎓 **Mentor** – Growth-focused, motivational advice  
+- 🧠 **Counsellor** – Deep, empathetic emotional support  
+- 🤝 **Friend** – Casual, relatable companionship  
+- 🔮 **Astrologer** – Cosmic insights using Sun, Moon & Rising signs  
+
+### 🌌 4. Celestial Personalization
+- Visual zodiac sign picker  
+- Collects Sun, Moon, and Rising signs  
+- Generates authentic, persona-driven astrological readings  
+
+---
+
+## 🛠️ Tech Stack  
+
+### 🔹 Frontend
+- React.js  
+- Vite  
+- Framer Motion (Animations)  
+- Lucide React (Icons)  
+
+### 🎨 Styling
+- Vanilla CSS  
+- Custom Glassmorphic Design System  
+
+### 🔹 Backend
+- Node.js  
+- Express.js  
+
+### 🗄 Database
+- MongoDB Atlas  
+
+### 🤖 AI Engine
+- Google Gemini API (Pro Model)  
+- Google Gemini Vision Model  
+
+### 🔐 Authentication
+- JWT-based secure sessions  
+
+---
+
+## ⚙️ Installation Steps  
+
+### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/yadnesh-thorat/mindmagic_chatbot.git
 cd mindmagic_chatbot
-```
 
-### 2. Setup Server
-```bash
+🔧 Setup Server
 cd server
 npm install
-```
-Create a `.env` file in the `server` folder with:
-```env
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-GROQ_API_KEY=your_gemini_api_key
-```
 
-### 3. Setup Client
-```bash
+Create a .env file inside the server/ folder:
+
+
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+GEMINI_API_KEY=your_gemini_api_key
+💻 Setup Client
 cd ../client
 npm install
-```
-Create a `.env` file in the `client` folder with:
-```env
+
+Create a .env file inside the client/ folder:
+
 VITE_API_URL=http://localhost:5000
-```
-
-## 🚀 How to Run
-
-### Start the Backend
-```bash
+🚀 How to Run
+▶ Start Backend
 cd server
 npm start
-```
 
-### Start the Frontend
-```bash
+Backend runs at:
+
+http://localhost:5000
+▶ Start Frontend
 cd client
 npm run dev
-```
-Open `http://localhost:5173` in your browser.
 
-## ✨ Features
-*   **🔮 Shaunak the Astrologer**: Uses a visual 3-sign picker to build your cosmic profile.
-*   **🖼️ Soul Lens Vision**: Upload images and get contextual responses based on what the AI "sees".
-*   **🌈 Interactive UI**: Animated floating background orbs that change color based on your selected persona and mood.
-*   **🗑️ Unsend Option**: Optimistic message deletion to keep your chat history clean.
-*   **👤 Visual Profile**: View your stats, member since date, and message count in a slide-out panel.
-*   **📔 AI Journaling**: Automatically summarizes your conversations into meaningful insights.
+Open in browser:
 
-## 🔭 Future Scope
-*   **🎙️ Voice Interaction**: Hands-free conversation for a more natural therapeutic experience.
-*   **📈 Emotional Trending**: Visualizing mood patterns over weeks and months to identify mental health triggers.
-*   **🤝 Collaborative Counseling**: Ability to anonymously share specific AI insights with real professionals.
-*   **📱 Mobile App**: Dedicated iOS/Android versions for on-the-go celestial guidance.
-
----
-*Created with ❤️ for the Hackathon.*
+http://localhost:5173
